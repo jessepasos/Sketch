@@ -5762,6 +5762,9 @@ li {
     width: 15px;
     text-align: center; }
 
+.container {
+  max-width: 1200px; }
+
 .btn-primary {
   background: #96858F;
   border: #4b4247; }
@@ -5806,10 +5809,22 @@ li {
   .container-folio a.thumbnail.active {
     border-color: #96858F;
     border-width: 1px; }
+  .container-folio #portfolio-items p {
+    text-align: justify; }
+  .container-folio #portfolio-items h5 {
+    margin: 25px auto 5px auto; }
+  .container-folio #portfolio-items ul {
+    margin-bottom: 25px; }
 
 .container-color {
   padding: 55px 0;
   background: #D5D5D5; }
+  .container-color blockquote {
+    margin: 0 auto; }
+    .container-color blockquote i {
+      font-size: 35px;
+      color: #9099A2;
+      margin: auto 20px; }
   .container-color .panel {
     margin: 10px; }
   .container-color .page-header {
@@ -5893,13 +5908,46 @@ li {
   transition: all 0.4s ease 0s; }
 
 .menu-toggle {
+  color: #FFFFFF;
   z-index: 1;
   position: fixed;
+  padding: 0;
   top: 0;
-  right: 0; }
+  right: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #9099A2;
+  border-radius: 50%; }
+  .menu-toggle i {
+    margin-top: 30%; }
 
 .toggle {
   margin: 0; }
+
+#portfolio-header a {
+  color: #328CC1; }
+  #portfolio-header a:hover {
+    color: #328CC1;
+    text-decoration: none; }
+
+#portfolio-header .navbar-brand {
+  color: #9d9d9d; }
+
+#portfolio-header #portfolio-info a.dropdown-toggle {
+  font-size: 20px;
+  text-align: center; }
+  #portfolio-header #portfolio-info a.dropdown-toggle i {
+    color: #FFFFFF;
+    margin: auto;
+    width: auto;
+    padding: 2px; }
+
+#portfolio-header #portfolio-info ul {
+  width: 250px; }
+  #portfolio-header #portfolio-info ul p {
+    margin: 10px;
+    text-align: justify; }
 
 .sketch-body {
   position: absolute;
@@ -5968,5 +6016,77 @@ li {
     height: 25px;
     font-size: 10px;
     margin: 10px auto; }
+
+.show-tell a {
+  color: #FF3B3F;
+  border: #b2292c; }
+  .show-tell a:hover {
+    color: #b2292c;
+    text-decoration: none; }
+  .show-tell a .font-icon {
+    color: #8da4a9;
+    margin: 0;
+    width: auto;
+    padding: 0;
+    text-align: center; }
+    .show-tell a .font-icon:hover {
+      color: #CAEBF2;
+      text-decoration: none; }
+
+.show-tell #header-image {
+  padding-top: 150px;
+  background: #ffffff url("http://www.sthenos.net/public/images/show_tell.png") no-repeat left top;
+  background-size: cover; }
+  .show-tell #header-image h1 {
+    color: #EFEFEF; }
+
+.show-tell .btn-primary, .show-tell .label-primary {
+  background: #CAEBF2;
+  border: #8da4a9; }
+  .show-tell .btn-primary:hover, .show-tell .label-primary:hover {
+    background: #8da4a9; }
+
+.show-tell .btn-success, .show-tell .label-success {
+  background: #FF3B3F;
+  border: #b2292c; }
+  .show-tell .btn-success:hover, .show-tell .label-success:hover {
+    background: #b2292c;
+    text-decoration: none; }
+
+.show-tell .font-icon {
+  margin-left: 5px;
+  width: 10px;
+  text-align: center; }
+
+.show-tell .login-or {
+  position: relative;
+  font-size: 18px;
+  color: #aaa;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.show-tell .span-or {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  margin-left: -25px;
+  background-color: #fff;
+  width: 50px;
+  text-align: center; }
+
+.show-tell .hr-or {
+  background-color: #cdcdcd;
+  height: 1px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important; }
+
+.show-tell .tab-row {
+  margin: 15px 0; }
+
+.show-tell #custom_Size {
+  width: 335px; }
 
 /*# sourceMappingURL=app.css.map */

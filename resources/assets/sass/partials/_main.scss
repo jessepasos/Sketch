@@ -7,7 +7,6 @@ $colorOvercast: #9099A2;
 $colorOvercastDark: #646b71;
 $colorPaper: #D5D5D5;
 $colorGray: #545454;
-
 a {
     color: $colorLavendar;
 }
@@ -41,6 +40,10 @@ li {
         width: 15px;
         text-align: center;
     }
+}
+
+.container {
+    max-width: 1200px;
 }
 
 .btn-primary {
@@ -105,11 +108,30 @@ li {
         border-color: $colorDusty;
         border-width: 1px;
     }
+    #portfolio-items {
+        p {
+            text-align: justify;
+        }
+        h5 {
+            margin: 25px auto 5px auto;
+        }
+        ul {
+            margin-bottom: 25px;
+        }
+    }
 }
 
 .container-color {
     padding: 55px 0;
     background: #D5D5D5;
+    blockquote {
+        margin: 0 auto;
+        i {
+            font-size: 35px;
+            color: $colorOvercast;
+            margin: auto 20px;
+        }
+    }
     .panel {
         margin: 10px;
     }
@@ -212,8 +234,8 @@ li {
                     text-decoration: none;
                 }
                 i {
-                	margin: auto;
-                	width: auto;
+                    margin: auto;
+                    width: auto;
                 }
             }
             a.active {
@@ -237,10 +259,23 @@ li {
 }
 
 .menu-toggle {
+    color: #FFFFFF;
     z-index: 1;
     position: fixed;
+    padding: 0;
     top: 0;
     right: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #9099A2;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+
+    i {
+        margin-top: 30%;
+    }
 }
 
 .toggle {

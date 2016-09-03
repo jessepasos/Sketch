@@ -31,12 +31,10 @@ class Portfolio_Controller extends Controller
         $objItems = (object) array();
 
         $objItems->sketch = array(
-            'label'    => 'Sketch',
-            'info'     => 'A sketch-pad built using the HTML canvas element. The user can select brush colour and sizes, and download their finished image.',
-            'repo_url' => false,
-            'image'    => 'http://placehold.it/500x500',
-            'tools'    => array('a', ' b', 'c', 'd'),
-            'options'  => array(
+            'label'   => 'Sketch',
+            'info'    => 'A sketch-pad built using the HTML canvas element. The user can select brush colour and sizes, and download their finished image.',
+            'repo'    => 'https://github.com/jessepasos/Sketch',
+            'options' => array(
                 'colours' => array(
                     '#ea5151' => 'Light Red',
                     '#E10707' => 'Red',
@@ -65,36 +63,30 @@ class Portfolio_Controller extends Controller
         );
 
         $objItems->show_tell = array(
-            'label'    => 'Show and Tell',
-            'info'     => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-            'repo_url' => false,
-            'image'    => 'http://placehold.it/500x500',
-            'tools'    => array('a', ' b', 'c', 'd'),
+            'label' => 'Show and Tell',
+            'info'  => 'An social image uploader built in Laravel. Show and Tell lets up share your images with other users, and give and receive comments.',
+            'repo'  => 'http://www.sthenos.net/show_tell',
         );
 
         $objItems->stopwatch = array(
-            'label'    => 'Stopwatch',
-            'info'     => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-            'repo_url' => false,
-            'image'    => 'http://placehold.it/500x500',
-            'tools'    => array('a', ' b', 'c', 'd'),
+            'label' => 'Stopwatch',
+            'info'  => 'A stopwatch application built with Java.',
+            'repo'  => 'https://github.com/jessepasos/Stopwatch',
         );
 
-        $objItems->converter = array(
-            'label'    => 'Unit Converter',
-            'info'     => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-            'repo_url' => false,
-            'image'    => 'http://placehold.it/500x500',
-            'tools'    => array('a', ' b', 'c', 'd'),
-        );
+        // $objItems->converter = array(
+        //     'label' => 'Unit Converter',
+        //     'info'  => 'A unit-converter application built with Java.',
+        //     'repo'  => 'https://github.com/jessepasos/Converter',
+        // );
 
-        $objItems->sthenos = array(
-            'label'    => 'Sthenos',
-            'info'     => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-            'repo_url' => false,
-            'image'    => 'http://placehold.it/500x500',
-            'tools'    => array('a', ' b', 'c', 'd'),
-        );
+        // $objItems->sthenos = array(
+        //     'label' => 'Sthenos',
+        //     'info'  => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+        //     'repo'  => false,
+        //     'image' => 'http://placehold.it/500x500',
+        //     'tools' => array('a', ' b', 'c', 'd'),
+        // );
 
         return $objItems;
     }
